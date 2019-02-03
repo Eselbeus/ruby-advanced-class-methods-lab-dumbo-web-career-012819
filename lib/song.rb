@@ -68,8 +68,12 @@ class Song
   end
   
   def self.create_from_filename(file_name)
+    formated_name = file_name.split(".")[0].split(" - ")
+    @name = formated_name[1]
+    @artist_name = formated_name[0]
     @song = self.new
-    @song.name = name
+    @song.name = @name
+    @song.artist_name = @artist_name
     @@all << @song
     @song
   end
