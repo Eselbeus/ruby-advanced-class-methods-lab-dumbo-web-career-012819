@@ -56,17 +56,15 @@ class Song
     end
   end
   
-  def new_from_filename(file_name)
-    # @song = Song.create
-    # formated = filename.split(".")
-    binding.pry
-    # formated_name = formated[0].split(" - ")
-    # binding.pry
-    # @name = formated_name[1]
-    # @artist = formated_name[0]
+  def self.new_from_filename(file_name)
     @song = Song.create
-    @name = file_name
-    @song.name = name
+    formated = filename.split(".")
+    formated_name = formated[0].split(" - ")
+    # binding.pry
+    @name = formated_name[1]
+    @artist = formated_name[0]
+    @song.name = @name
+    @song.artist = @artist
     @@all << @song
     @song
   end
