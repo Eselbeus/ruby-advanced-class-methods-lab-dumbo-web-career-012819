@@ -1,7 +1,7 @@
 require 'pry'
 
 class Song
-  attr_accessor :name, :artist_name
+  attr_accessor :name, :artist
   
   @@all = []
 
@@ -62,7 +62,7 @@ class Song
     formated_name = formated[0].split(" - ")
     # binding.pry
     @name = formated_name[1]
-    @artist_name = formated_name[0]
+    @artist = formated_name[0]
     @song.name = @name
     @song.artist = @artist
     @@all << @song
