@@ -32,7 +32,7 @@ class Song
     @name = name
     @song.name = name
     @@all << @song
-    binding.pry
+    # binding.pry
     @song
   end
   
