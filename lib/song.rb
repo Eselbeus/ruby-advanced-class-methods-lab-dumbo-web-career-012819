@@ -36,7 +36,8 @@ class Song
   end
   
   def self.find_by_name(name)
-    Song.all.find(name)
+    Song.all.find do |tune|
+      
     
   end
   
