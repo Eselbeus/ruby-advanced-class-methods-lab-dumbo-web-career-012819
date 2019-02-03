@@ -17,16 +17,13 @@ class Song
     @song = self.new
     @name = @song.name
     @@all << @song
-    # binding.pry
     @song
   end
   
   def self.create_by_name(name)
     @song = self.new
-    # @name = name
     @song.name = name
     @@all << @song
-    # binding.pry
     @song
   end
   
@@ -35,6 +32,7 @@ class Song
     @name = @song.name
     @@all << @song
     # binding.pry
+    @song
   end
   
   def self.alphabetical
