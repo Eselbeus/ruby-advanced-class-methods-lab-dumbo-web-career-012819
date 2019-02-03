@@ -58,8 +58,8 @@ class Song
   
   def self.new_from_filename(file_name)
     @song = Song.create
-    formated = file_name.split(".")
-    formated_name = formated[0].split(" - ")
+    
+    formated_name = file_name.split(".")[0].split(" - ")
     # binding.pry
     @name = formated_name[1]
     @artist_name = formated_name[0]
