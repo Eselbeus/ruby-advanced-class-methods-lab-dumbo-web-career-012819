@@ -62,12 +62,12 @@ class Song
     binding.pry
     # formated_name = formated[0].split(" - ")
     # binding.pry
-    @name = formated_name[1]
-    @artist = formated_name[0]
-    @song.name = @name
-    @song.artist = @artist
-    @@all << @song
-    @song
+    # @name = formated_name[1]
+    # @artist = formated_name[0]
+    # @song.name = @name
+    # @song.artist = @artist
+    # @@all << @song
+    # @song
   end
   
   def self.destroy_all 
