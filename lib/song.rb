@@ -52,7 +52,9 @@ class Song
   
   def self.alphabetical
     
-    Song.all
+    Song.all.sort do |a, b|
+      
+    end
     
   end
   
