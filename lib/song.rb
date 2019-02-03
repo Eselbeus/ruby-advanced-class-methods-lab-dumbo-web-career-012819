@@ -64,10 +64,11 @@ class Song
     # binding.pry
     # @name = formated_name[1]
     # @artist = formated_name[0]
-    # @song.name = @name
-    # @song.artist = @artist
-    # @@all << @song
-    # @song
+    @song = Song.create
+    @name = file_name
+    @song.name = name
+    @@all << @song
+    @song
   end
   
   def self.destroy_all 
