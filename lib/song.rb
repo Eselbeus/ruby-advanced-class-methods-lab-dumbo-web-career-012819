@@ -52,6 +52,7 @@ class Song
   
   def self.alphabetical
     Song.all.name.sort
+    binding.pry
   end
   
   def self.destroy_all 
