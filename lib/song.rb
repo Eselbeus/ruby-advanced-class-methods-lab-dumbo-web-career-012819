@@ -41,6 +41,17 @@ class Song
     end
   end
   
+  def self.find_or_create_by_name(name)
+    if_exists = Song.all.find do |tune|
+      tune.name == name
+    end
+    if if_exists
+      return if_exists
+    else 
+      Song.create_by_name(name)
+    end
+  end
+  
   def self.alphabetical
     @@all.sort
   end
