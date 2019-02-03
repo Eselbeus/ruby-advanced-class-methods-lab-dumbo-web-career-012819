@@ -57,11 +57,10 @@ class Song
   end
   
   def new_from_filename(file_name)
-    @song = Song.create
-    binding.pry
+    # @song = Song.create
     formated = filename.split(".")
     formated_name = formated[0].split(" - ")
-    # binding.pry
+    binding.pry
     @name = formated_name[1]
     @artist = formated_name[0]
     @song.name = @name
