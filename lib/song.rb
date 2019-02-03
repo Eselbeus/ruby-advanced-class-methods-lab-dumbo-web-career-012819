@@ -42,9 +42,7 @@ class Song
   end
   
   def self.find_or_create_by_name(name)
-    if_exists = Song.all.find do |tune|
-      tune.name == name
-    end
+    if_exists = Song.find_by_name(name)
     if if_exists
       return if_exists
     else 
