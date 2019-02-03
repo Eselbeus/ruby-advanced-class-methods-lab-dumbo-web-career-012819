@@ -53,7 +53,7 @@ class Song
   end
   
   def self.alphabetical
-    @@all.sort
+    Song.all.name.sort
   end
   
   def self.destroy_all 
