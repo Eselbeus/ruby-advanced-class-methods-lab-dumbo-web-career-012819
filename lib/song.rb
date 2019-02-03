@@ -64,6 +64,7 @@ class Song
     @song.name = @name
     @song.artist = @artist
     @@all << @song
+    binding.pry
     @song
   end
   
