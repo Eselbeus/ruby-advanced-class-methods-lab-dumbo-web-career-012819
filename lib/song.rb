@@ -37,8 +37,8 @@ class Song
   
   def self.find_by_name(name)
     Song.all.find do |tune|
-      
-    
+      tune.name == name
+    end
   end
   
   def self.alphabetical
