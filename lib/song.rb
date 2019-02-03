@@ -51,10 +51,12 @@ class Song
   end
   
   def self.alphabetical
-    
     Song.all.sort do |a, b|
       a.name <=> b.name
     end
+  end
+  
+  def new_from_filename
     
   end
   
